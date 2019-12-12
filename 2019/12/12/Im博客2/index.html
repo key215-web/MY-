@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>js知识点回顾 | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="1.JS中有几种数据类型分别是哪几种？1Number,String,Boolean,Object,Null,Undefined 2.JS中避免命名冲突的三个方法1命名空间，闭包，匿名函数  3.JS在HTML中的引入方式有哪些？又有什么优缺点？1a外部引入 b内部嵌套 c行内代码  例：&lt;button onclick&#x3D;”alert(‘hello’)”&gt;按钮&lt;&#x2F;button&gt;">
+<meta property="og:type" content="article">
+<meta property="og:title" content="js知识点回顾">
+<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;12&#x2F;12&#x2F;Im%E5%8D%9A%E5%AE%A22&#x2F;index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="1.JS中有几种数据类型分别是哪几种？1Number,String,Boolean,Object,Null,Undefined 2.JS中避免命名冲突的三个方法1命名空间，闭包，匿名函数  3.JS在HTML中的引入方式有哪些？又有什么优缺点？1a外部引入 b内部嵌套 c行内代码  例：&lt;button onclick&#x3D;”alert(‘hello’)”&gt;按钮&lt;&#x2F;button&gt;">
+<meta property="article:published_time" content="2019-12-12T08:19:13.699Z">
+<meta property="article:modified_time" content="2019-12-12T08:40:37.934Z">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/MY-/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  
+<link rel="stylesheet" href="/MY-/css/style.css">
+
+<meta name="generator" content="Hexo 4.1.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/MY-/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/MY-/">Home</a>
+        
+          <a class="main-nav-link" href="/MY-/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/MY-/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-Im博客2" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/MY-/2019/12/12/Im%E5%8D%9A%E5%AE%A22/" class="article-date">
+  <time datetime="2019-12-12T08:19:13.699Z" itemprop="datePublished">2019-12-12</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      js知识点回顾
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="1-JS中有几种数据类型分别是哪几种？"><a href="#1-JS中有几种数据类型分别是哪几种？" class="headerlink" title="1.JS中有几种数据类型分别是哪几种？"></a>1.JS中有几种数据类型分别是哪几种？</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Number,String,Boolean,Object,Null,Undefined</span><br></pre></td></tr></table></figure>
+<h2 id="2-JS中避免命名冲突的三个方法"><a href="#2-JS中避免命名冲突的三个方法" class="headerlink" title="2.JS中避免命名冲突的三个方法"></a>2.JS中避免命名冲突的三个方法</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">命名空间，闭包，匿名函数</span><br></pre></td></tr></table></figure>
+
+<h2 id="3-JS在HTML中的引入方式有哪些？又有什么优缺点？"><a href="#3-JS在HTML中的引入方式有哪些？又有什么优缺点？" class="headerlink" title="3.JS在HTML中的引入方式有哪些？又有什么优缺点？"></a>3.JS在HTML中的引入方式有哪些？又有什么优缺点？</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">a外部引入 b内部嵌套 c行内代码  例：&lt;button onclick=”alert(‘hello’)”&gt;按钮&lt;/button&gt; 对比css引入</span><br></pre></td></tr></table></figure>
+
+<h2 id="4-事件委托"><a href="#4-事件委托" class="headerlink" title="4.事件委托"></a>4.事件委托</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">利用事件冒泡的原理，子元素的事件会冒泡到父元素，可以只给父元素添加事件，通过事件目标判断元素。优点：节省内存，动态添加的子元素也包含事件</span><br></pre></td></tr></table></figure>
+
+<h2 id="5-构造函数有何优缺点"><a href="#5-构造函数有何优缺点" class="headerlink" title="5.构造函数有何优缺点"></a>5.构造函数有何优缺点</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">构造函数可以创建多个对象，</span><br><span class="line">缺点：容易跟普通函数一样调用</span><br></pre></td></tr></table></figure>
+
+<h2 id="6-闭包"><a href="#6-闭包" class="headerlink" title="6.闭包"></a>6.闭包</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">函数内部又定义了一个函数，内部函数引用外部函数的变量，就构成了闭包</span><br></pre></td></tr></table></figure>
+<h2 id="7-事件流"><a href="#7-事件流" class="headerlink" title="7.事件流"></a>7.事件流</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">页面触发一个事件时，会按照一定的顺序来响应事件，事件的响应过程为事件流</span><br><span class="line">就我个人理解就是网页对点击事件的排序顺序就是事件流</span><br></pre></td></tr></table></figure>
+
+<h2 id="8-异步“和”同步"><a href="#8-异步“和”同步" class="headerlink" title="8.异步“和”同步"></a>8.异步“和”同步</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">同步：按顺序执行，同一时刻只能执行一个事件</span><br><span class="line">异步：不按顺序执行，同一时刻可以执行多个任务</span><br></pre></td></tr></table></figure>
+
+<h2 id="9-this-（作用域）"><a href="#9-this-（作用域）" class="headerlink" title="9.this （作用域）"></a>9.this （作用域）</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">this的指向：普通函数内的this指向全局变量</span><br><span class="line">构造函数内部this指向新创建出来的对象</span><br><span class="line">对象方法内的this指向的是调用该方法的对象</span><br><span class="line">call,apply,<span class="built_in">bind</span>可以改变this的指向</span><br></pre></td></tr></table></figure>
+
+<h2 id="10-call和apply方法的区别"><a href="#10-call和apply方法的区别" class="headerlink" title="10.call和apply方法的区别"></a>10.call和apply方法的区别</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">这两个都是函数的方法，可以改变this的指向，fn.call(obj,param1,param2,…)</span><br><span class="line">call传入单个参数</span><br><span class="line">fn.apply(obj,[param1,param2,...])</span><br><span class="line">apply传入一个数组</span><br></pre></td></tr></table></figure>
+
+<h2 id="11-JavaScript中的继承是如何工作的"><a href="#11-JavaScript中的继承是如何工作的" class="headerlink" title="11.JavaScript中的继承是如何工作的"></a>11.JavaScript中的继承是如何工作的</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">子构造函数中执行父构造函数，并用call\apply改变this</span><br><span class="line">克隆父构造函数原型上的方法</span><br></pre></td></tr></table></figure>
+
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/12/12/Im%E5%8D%9A%E5%AE%A22/" data-id="ck42h4jjl0002nkvtg75wajzv" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/MY-/2019/12/12/Im%E5%8D%9A%E5%AE%A21/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">css--html 面试题</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/MY-/archives/2019/12/">December 2019</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/MY-/2019/12/12/Im%E5%8D%9A%E5%AE%A22/">js知识点回顾</a>
+          </li>
+        
+          <li>
+            <a href="/MY-/2019/12/12/Im%E5%8D%9A%E5%AE%A21/">css--html 面试题</a>
+          </li>
+        
+          <li>
+            <a href="/MY-/2019/12/12/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2019 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/MY-/" class="mobile-nav-link">Home</a>
+  
+    <a href="/MY-/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  
+<link rel="stylesheet" href="/MY-/fancybox/jquery.fancybox.css">
+
+  
+<script src="/MY-/fancybox/jquery.fancybox.pack.js"></script>
+
+
+
+
+<script src="/MY-/js/script.js"></script>
+
+
+
+
+  </div>
+</body>
+</html>
