@@ -63,6 +63,80 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-博客3" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/MY-/2019/12/14/%E5%8D%9A%E5%AE%A23/" class="article-date">
+  <time datetime="2019-12-14T01:30:04.060Z" itemprop="datePublished">2019-12-14</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/MY-/2019/12/14/%E5%8D%9A%E5%AE%A23/">ES6初识</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>#1.基本语法<br>###1.1let和const</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">let</span></span><br><span class="line">块级作用域</span><br><span class="line"></span><br><span class="line">const</span><br><span class="line">关键词声明一个常量，常量一经就不能给这个常量重新分配新的值了。</span><br></pre></td></tr></table></figure>
+
+<p>###1.2解构赋值</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ES6允许按照一定模式，从数组和对象中提取值，对变量进行赋值，这被称为解构（Destructuring）。</span><br></pre></td></tr></table></figure>
+
+<p>#2.函数<br>###2.1 为函数的参数设置默认值</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">在es6里面我们可以给定义的函数接收的参数设置默认的值，如果不去指定这个函数的参数的值的话，就会使用这些参数的默认的值</span><br></pre></td></tr></table></figure>
+
+<p>###2.2  …操作符</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">...是es6中新添加的一种操作符，可以叫做spread（扩展）或则rest（剩余）</span><br><span class="line"></span><br><span class="line">   1).rest（剩余操作符）</span><br><span class="line">   剩余操作符一般会用在函数的参数里面。</span><br><span class="line"></span><br><span class="line">   2).spread（扩展运算符）</span><br><span class="line">  ...操作符如果用在数组的前面，作用就是将这个数组展开，因此称为扩展操作符。相当于rest操作符的逆运算</span><br></pre></td></tr></table></figure>
+
+
+<p>###2.3 箭头函数</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">es6定义了一种函数方法，叫箭头函数</span><br></pre></td></tr></table></figure>
+
+<p>###2.4 This是什么?</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">带有this关键词的箭头函数行为不同于正常函数，在Javascript中每个函数定义了他自己的this上下文，但是箭头函数中的this则是获得最接近（enclosing 封闭者）上下文的值。</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">This的指向，谁调用指向谁，箭头函数This的指向，向上找非箭头函数，找到以后这个非箭头函数的this一致</span><br></pre></td></tr></table></figure>
+
+<p>#3 字符串</p>
+<p>###3.1includes(), startsWith(), endsWith()</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">includes()：返回布尔值，表示是否找到了参数字符串。</span><br><span class="line">startsWith()：返回布尔值，表示参数字符串是否在源字符串的头部。</span><br><span class="line">endsWith()：返回布尔值，表示参数字符串是否在源字符串的尾部。</span><br></pre></td></tr></table></figure>
+
+<p>#4对象 Object</p>
+<p>###4.1 Object.is()</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">ES5比较两个值是否相等，只有两个运算符：相等运算符（==）和严格相等运算符（===）。它们都有缺点，前者会自动转换数据类型，后者的NaN不等于自身，以及+0等于-0。JavaScript缺乏一种运算，在所有环境中，只要两个值是一样的，它们就应该相等。</span><br><span class="line">ES6提出“Same-value equality”算法，用来解决这个问题。Object.is就是部署这个算法的新方法。它用来比较两个值是否严格相等，与严格比较运算符（===）的行为基本一致。</span><br><span class="line">不同之处只有两个：一是+0不等于-0，二是NaN等于自身。</span><br></pre></td></tr></table></figure>
+<p>###4.2Object.assign()</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">基本用法:</span><br><span class="line">Object.assign方法用于对象的合并，将源对象（<span class="built_in">source</span>）的所有可枚举属性，复制到目标对象（target）。</span><br></pre></td></tr></table></figure>
+
+<p>#5集合对象</p>
+<p>###5.1 set对象</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">Set对象是一组值的集合，这些值是不重复的，无序的，与我们在数学中学到的集合是一样的。我们可以往里面添加、删除、查询数据。</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">1).delete(<span class="string">"foo"</span>);//移除Set的中与这个值相等的元素</span><br><span class="line">2)..size; // 2返回Set对象的值的个数。</span><br><span class="line">3)..clear();//移除Set对象内的所有元素</span><br></pre></td></tr></table></figure>
+
+<p>###5.2 map对象</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">如果你需要一个键值对的数据结构，我们可以声明一个Map对象，这个对象里面可以包含多个项目，每个项目都有一个名字，还有一个跟它对应的值。</span><br><span class="line"></span><br><span class="line">2).myMap.size查看集合中元素的数量</span><br><span class="line">3).myMap.get(obj);获取相应的键值</span><br><span class="line">4).myMap.delete(fun);删除一个键值对，然后再判断该键值对是否存在。</span><br><span class="line">5).myMap.has(fun);删除一个键值对，然后再判断该键值对是否存在。</span><br><span class="line">6).myMap.clear();删除Map集合中所有的键值对：</span><br></pre></td></tr></table></figure>
+
+<p>###5.3 class</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ES6提供了更接近传统语言的写法，引入了Class（类）这个概念，作为对象的模板。通过class关键字，可以定义类。基本上，ES6的class可以看作只是一个语法糖，它的绝大部分功能，ES5都可以做到，新的class写法只是让对象原型的写法更加清晰、更像面向对象编程的语法而已。</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/12/14/%E5%8D%9A%E5%AE%A23/" data-id="ck4508v8u0002n4vtg2h488xg" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-Im博客2" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/MY-/2019/12/12/Im%E5%8D%9A%E5%AE%A22/" class="article-date">
@@ -109,7 +183,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/12/12/Im%E5%8D%9A%E5%AE%A22/" data-id="ck42h4jjl0002nkvtg75wajzv" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/12/12/Im%E5%8D%9A%E5%AE%A22/" data-id="ck4508v8r0001n4vtdit90gj2" class="article-share-link">Share</a>
       
       
     </footer>
@@ -170,7 +244,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/12/12/Im%E5%8D%9A%E5%AE%A21/" data-id="ck42h4jj20000nkvtem1b1333" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/12/12/Im%E5%8D%9A%E5%AE%A21/" data-id="ck4508v8b0000n4vt1axi7g5d" class="article-share-link">Share</a>
       
       
     </footer>
@@ -219,7 +293,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/12/12/hello-world/" data-id="ck42h4jjh0001nkvtdwm629ut" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/12/12/hello-world/" data-id="ck4508v8w0003n4vt25qu9mxv" class="article-share-link">Share</a>
       
       
     </footer>
@@ -258,6 +332,10 @@
     <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/MY-/2019/12/14/%E5%8D%9A%E5%AE%A23/">ES6初识</a>
+          </li>
         
           <li>
             <a href="/MY-/2019/12/12/Im%E5%8D%9A%E5%AE%A22/">js知识点回顾</a>
